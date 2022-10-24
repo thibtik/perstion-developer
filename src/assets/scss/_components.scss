@@ -1,0 +1,200 @@
+.card-content {
+    background: #ffffff;
+    .head {
+        .btn-see-all a {
+            background: $main-gray;
+            padding: 0.5rem 0.7rem;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            border-radius: 5px;
+        }
+    }
+}
+.slick-list {
+    .item {
+        padding: 0 0.5rem;
+    }
+}
+.slick-slider {
+    margin-top: 0;
+    &.custom-arrow {
+        .slick-prev {
+            right: 4rem;
+            top: -3rem;
+            left: unset;
+            &::before {
+                background: #474747;
+                color: #ffffff;
+                transform: rotate(180deg);
+            }
+        }
+        .slick-next {
+            right: 1.5rem;
+            top: -3rem;
+            &::before {
+                color: #000000;
+                background: #ffffff;
+            }
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        &::before {
+            content: "➜";
+        }
+    }
+    .slick-prev {
+        left: -15px;
+        z-index: 9;
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+    .slick-next {
+        right: 25px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        &::before {
+            font-family: inherit;
+            font-size: 20px;
+            height: 35px;
+            width: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #000;
+            background-color: #fff;
+            box-shadow: 0px 0px 6px 0px rgba(56, 56, 56, 0.48);
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(56, 56, 56, 0.48);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(56, 56, 56, 0.48);
+        }
+    }
+}
+.list-item {
+    ul.nav-pills {
+        margin-bottom: 1.2rem;
+        border-bottom: 1px solid $main-gray;
+        li.nav-item {
+            a.nav-link {
+                color: #333333;
+                position: relative;
+                padding: 0;
+                margin: 0 1rem;
+                font-weight: 600;
+                &.active {
+                    background-color: transparent;
+                    color: $main;
+                    &:after {
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        background: $main;
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                    }
+                }
+            }
+            &:first-child {
+                a.nav-link {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+.item {
+    
+    .item-name h4 {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+        a {
+            color: #000000;
+        }
+    }
+
+
+    &.item-flash-deal{
+        .image{
+            border-radius: 20px;
+        }
+    }
+    &.news {
+       border: 1px solid $bg-gray;
+        width: calc(100% - 1rem) !important;
+        margin: 0.5rem;
+        &.item-advertise-square{
+            padding: 0;
+            border: none;
+            .image{
+                border-radius: 20px;
+            }
+        }
+        .item-info {
+            display: flex;
+            align-items: center;
+            padding: 0.7rem;
+            .pro {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 1rem;
+            }
+            .user {
+                h5.name {
+                    margin: 0;
+                }
+            }
+        }
+        .item-des {
+            padding: 0.7rem;
+        }
+        .engage {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.7rem;
+            .icon {
+                margin-right: 0.7rem;
+            }
+        }
+        .comment-here {
+            display: flex;
+            border-top: 1px solid $main-gray;
+            align-items: center;
+            padding: 1rem 0.7rem;
+            .icon {
+                margin-right: 1rem;
+            }
+            .form-control {
+                background-color: #f3f3f3;
+                background-color: #f3f3f3;
+                border-radius: 3rem;
+                border: none;
+            }
+        }
+    }
+}
+section.get-car-verify {
+    .content {
+        background: $main;
+        border-radius: 20px;
+    }
+    .title h4 {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .btn-get a {
+        background: #ffffff;
+        color: $main;
+        padding: 0.7rem 1rem;
+        display: inline-block;
+        border-radius: 10px;
+    }
+}

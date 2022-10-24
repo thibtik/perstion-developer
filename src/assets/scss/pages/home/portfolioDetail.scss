@@ -1,0 +1,137 @@
+@import "../../variables/variables";
+element.style {
+    overflow-x: hidden;
+}
+#portfolioDetail{
+    background: $card-bg;
+    position: fixed;
+    overflow-x: hidden;
+
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    .container{
+        width: 85%;
+        height: 30rem;
+        margin-top: 6rem;
+        background: $card-bg;
+        box-shadow: $card-shadow;
+        border-radius: 15px;
+        .detail{
+            // padding-top: 12px;
+            padding: 15px 15px 0 0;
+
+            .close{
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                box-shadow: $card-shadow;
+                background: $card-bg;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary;
+                margin-left: auto ;
+                cursor: pointer;
+            }
+            .close:hover{
+                color: #fff;
+                background: $primary;
+                
+            }
+            .row{
+                .content-img{
+                    margin-top: -2px;
+                    padding:0 45px 45px 45px;
+                }
+                .img-product{
+                    border-radius: 15px;
+                }
+                .text{
+                    padding: 20px 15px 30px 15px;
+                    .title{
+                        font-weight: 700;
+                        font-size: 35px;
+                        line-height: 1.3;
+                    }
+                    .description,.subdescription{
+                        font-size: 18px;
+                    }
+                    .button{
+                        margin-top: 2rem;
+                        .like{
+                            box-shadow: $card-shadow;
+                            padding: 10px 35px 10px 35px;
+                            border: none;
+                            font-size: 15px;
+                            font-weight: 500;
+                            border-radius: 6px;
+                            color: $primary;
+                            svg{
+                                margin-bottom: 12px;
+                            }
+                        }
+                        .like:hover, .project:hover{
+                            background: $primary;
+                            transition: .5s;       
+                            box-shadow: 0px 15px 20px rgba(99, 97, 97, 0.4);
+                            color: #fff;
+                            transform: translateY(-3px);
+                        }
+                        .project{
+                            box-shadow: $card-shadow;
+                            padding: 15px 35px 15px 35px;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $primary;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    #portfolioDetail{  
+        .container{
+            height: 100%;
+            width: 90%;
+            margin-bottom: 30px;
+            .row{
+                .button{
+                    display: flex;
+                }
+            }
+        }
+    }
+ 
+ }
+
+@media screen and (max-width:768px) {
+    #portfolioDetail{ 
+        .container{
+            height: 100%;
+            margin-bottom: 30px;
+        }
+    }
+ 
+ }
+
+@media screen and (max-width:992px) {
+    #portfolioDetail{
+        .container{
+            height: 100%;
+            margin-bottom: 30px;
+        }
+    }
+ }

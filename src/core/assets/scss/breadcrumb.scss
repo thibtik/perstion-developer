@@ -1,0 +1,64 @@
+@import '../../../assets/scss/variables/variables';
+.breadcrumbs{
+    background-color: $main;
+    position: relative;
+    .title h1{
+        color: $primary;
+        position: relative;
+        z-index: 2;
+        font-size: 3.5rem;
+    }
+    &::after,
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#ffffffad 0%),
+        to(rgba(33, 30, 59, 0))
+      );
+      background-image: linear-gradient(
+        90deg,
+        #ffffffad 0%,
+        rgba(33, 30, 59, 0) 100%
+      );
+      background-image: -ms-linear-gradient(
+        90deg,
+        #ffffffad 0%,
+        rgba(33, 30, 59, 0) 100%
+      );
+      z-index: 1;
+    }
+    // &::before{
+    //     content: '';
+    // background:$white;
+    // height: 100%;
+    // width: 100%;
+    // opacity: .8;
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    // z-index: 0;
+    // }
+}
+@media only screen and (max-width: 1024px) {
+    .breadcrumb{
+        .title h1{
+            font-size: 2.5rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .breadcrumb{
+        .title h1{
+            font-size: 2rem;
+        }
+    }
+}

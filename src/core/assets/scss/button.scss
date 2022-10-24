@@ -1,0 +1,72 @@
+@import '../../../assets/scss/variables/variables';
+a.btn-main{
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: $white;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1rem;
+    -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    .b-icon{
+        font-size: 1.5rem;
+        vertical-align: -0.25em;
+        position: relative;
+        left: 0;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        
+    }
+    &.btn-white{
+        background-color: $white;
+        color: $primary;
+        &:hover{
+            color: $white;
+        }
+    }
+    &.btn-service{
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: $primary;
+        padding: 0;
+        &:hover{
+            background-color: transparent;
+            color: $primary;
+        }
+    }
+    &.no-bg{
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+    }
+    &.btn-blog{
+        padding: 0.7rem 1.5rem;
+
+    }
+    &.hover-white:hover{
+        color: $white;
+    }
+    &:hover{
+        background-color: $main;
+        color: $white;
+        .b-icon{
+            left: .5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    a.btn-main{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        .b-icon{
+            vertical-align: -8px;
+        }
+    }
+}

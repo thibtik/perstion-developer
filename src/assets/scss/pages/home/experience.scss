@@ -1,0 +1,107 @@
+@import '../../variables/variables';
+
+// .experience {
+
+.experience{
+    padding-top: .5rem;
+.content{
+    position: relative;
+    margin: 150px;
+        .subtitle {
+            color: $primary;
+        }
+        .row-card{
+            box-shadow: $card-shadow;
+            background: #f1f3f5;
+                .img-cards{
+                    overflow: hidden;
+                    padding: 0;
+                    img{
+                        transition: 0.4s ease-in-out;
+                    }
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
+                }
+                .detail-info{
+                    display: flex;
+                    align-items: center;
+                    .text-infor{
+                        padding: 10px;
+                        .date{
+                        background: $primary;
+                        font-size: 13px;
+                        }
+                    }
+                    .experience-right{
+                        padding-left: 15rem;
+                        .contact-btn{
+                            color: $primary;
+                            background: #f2f3f4;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            padding: 15px 1.5rem;
+                            box-sizing: border-box;
+                            font-size: 13px;
+                            &:hover {
+                                background: $primary;
+                                box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+                                color: #fff;
+                                transform: translateY(-7px);
+                                transition: 0.7s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media only screen and (max-width: 992px) {
+    .experience{
+        .content{
+            .row{
+                .detail-info{
+                    display: block;
+                    .experience-right{
+                        padding-left: 0;
+                    }
+                }
+            }
+          }
+
+        }
+    }
+
+
+@media only screen and ( max-width:1200px){
+    .experience{
+        .content{
+            .row{
+                .detail-info{
+                    display: block;
+                    .experience-right{
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and ( min-width:1200px){
+    .experience{
+        .content{
+            .row{
+                .detail-info{
+                    .experience-right{
+                        padding: 1.5rem;
+                        margin-left: 7rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+

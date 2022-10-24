@@ -1,0 +1,132 @@
+@import "../../variables/variables";
+
+#portfolio {
+    overflow-x: hidden;
+    .container {
+        margin-bottom: 23vh;
+        .title-content {
+            font-size: 14px;
+            letter-spacing: 4px;
+            span {
+                color: red;
+            }
+            .title {
+                font-weight: 700;
+                font-size: 60px;
+            }
+        }
+        .card-porfolio {
+            box-shadow: $card-shadow;
+            padding: 2rem;
+            box-shadow: $card-bg;
+            background: $card-bg;
+            border-radius: 15px;
+            cursor: pointer;
+            .zoom-img {
+                border-radius: 15px;
+                overflow: hidden;
+            }
+            .zoom-img img {
+                width: 100%;
+
+                transition: 0.6s ease-in-out;
+            }
+            .zoom-img:hover img {
+                transform: scale(1.2)
+            }
+            .img-porfolio {
+                border-radius: 15px;
+            }
+            .description {
+                font-size: 30px;
+                svg {
+                    transition: .4s;
+                }
+            }
+            .description:hover {
+                color: $primary;
+                transition: .5s;
+                cursor: pointer;
+                transform: translateY(-1px);
+                svg {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .skill {
+                font-size: 14px;
+                color: $primary;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    #portfolio{
+     .section{
+         .container{
+                .card-porfolio{
+                    .icon{
+                        margin-right: 40px;
+                    }
+                    .content-img{
+                        padding: 30px;
+                    }
+                    .skill{
+                        margin-top: 0;
+                        padding: 0px 0px 0px 30px;
+                    }
+                    .description{
+                        padding: 0px 0 20px 30px;
+                    }
+                }
+            }
+        }
+    } 
+ }
+@media screen and (max-width:576px) {
+    #portfolio{
+     .section{
+         .container{
+             .row{
+                .card-porfolio{
+                    padding: 0;
+                    .icon{
+                        margin-right: 40px;
+                    }
+                }
+             }
+         }
+         }
+    } 
+ }
+@media screen and (max-width:992px) {
+    #portfolio{
+     .section{
+         .container{
+             .row{
+                .card-porfolio{
+                    .icon{
+                        margin-right: 40px;
+                    }
+                    padding: 0;
+                    .content-img{
+                        padding: 30px;
+                    }
+                    .skill{
+                        margin-top: 0;
+                        padding: 0px 0px 0px 30px;
+                    }
+                    .description{
+                        padding: 0px 0 20px 30px;
+                    }
+                }
+             }
+         }
+         }
+    } 
+ }
